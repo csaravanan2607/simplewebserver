@@ -1,5 +1,5 @@
-# EX01 Developing a Simple Webserver
-## Date: 05/10/23
+# EX-01 Developing a Simple Webserver
+## Date: 
 
 ## AIM:
 To develop a simple webserver to serve html pages.
@@ -21,84 +21,255 @@ Serving the HTML pages.
 Testing the webserver.
 
 ## PROGRAM:
-```
-from http.server import HTTPServer, BaseHTTPRequestHandler
-content = """
-<!DOCTYPE html>
-
-<html>
+```<!DOCTYPE html>
 <head>
-<title>My webserver</title>
+    <title>LAPTOP CONFIGURATION</title>
 </head>
-<body>
-<h1 align="center"><b>Top 5 Revenue Companies</b></h1><br>
-    <table align="center" border="15" cellpadding="15" cellspacing="3">
-        <tr>
-            <th>Company name</th>
-            <th>Location</th>
-            <th>Yearly turn over</th>
-        </tr>
-        <tr>
-            <td><ul>
-                <li>Infosis</li>
-                <br>
-                <li>HCL</li>
-                <br>
-                <li>Wipro</li>
-                <br>
-                <li>Redington India Ltd</li>
-                <br>
-                <li>Tech Mahindra Limited</li>
-            </ul></td>
-            <td>
-                <ul>
-                    <li>chennai</li>
-                    <br>
-                    <li>chennai</li>
-                    <br>
-                    <li>chennai</li>
-                    <br>
-                    <li>chennai</li>
-                    <br>
-                    <li>chennai</li>
-                </ul>
-            </td>
-            <td>
-                <ul>
-                    <li>123crore</li>
-                    <br>
-                    <li>1233crore</li>
-                    <br>
-                    <li>4165crore</li>
-                    <br>
-                    <li>4523crore</li>
-                    <br>
-                    <li>7456crore</li>
-                </ul>
-            </td>
-        </tr>
-    </table>
+
+<body><center>
+    <h1>My laptop Configuration</h1>SARAVANAN C 212222110041<h1></h1></center>
+    <table border="2px" align="center" cellpadding="10" style="background-color: antiquewhite;" >
+    <tr style="color: black; ">
+        <th>DEVICE SPECIFICATION</th>
+        <th>DETAILS</th>
+    </tr>
+    <tr style="color: rgb(0, 0, 0); ">
+        <td>BRAND</td>
+        <td>ASUS</td>
+    </tr>
+    <tr>
+        <td>MODEL NAME</td>
+        <td>VIVOBOOK</td>
+    </tr>
+    <tr>
+        <td>SCREEN SIZE</td>
+        <td>15.6 inches</td>
+    </tr>
+    <tr>
+        <td>COLOR</td>
+        <td>GREY</td>
+    </tr>
+    <tr>
+        <td>RAM</td>
+        <td>4+16GB</td>
+    </tr>
+    <tr>
+        <td>HARD DISK</td>
+        <td>CORE i5</td>
+    </tr>
+    <tr>
+        <td>GRAPHICS CARD</td>
+        <td>NVIDIA</td>
+    </tr>
+    <tr>
+        <td>SYSTEM TYPE</td>
+        <td>64 Bit-OS,X64</td>
+    </tr>
+</table>
+
 </body>
-</html>
 
 
-"""
-class myhandler(BaseHTTPRequestHandler):
-    def do_GET(self):
-        print("request received")
-        self.send_response(200)
-        self.send_header('content-type', 'text/html; charset=utf-8')
-        self.end_headers()
-        self.wfile.write(content.encode())
-server_address = ('',8000)
-httpd = HTTPServer(server_address,myhandler)
-print("my webserver is running...")
-httpd.serve_forever()
+
+<!DOCTYPE html>
+<head>
+    <title>LAPTOP CONFIGURATION</title>
+</head>
+
+<body><center>
+    <h1>My laptop Configuration</h1>SARAVANAN C 212222110041<h1></h1></center>
+    <table border="2px" align="center" cellpadding="10" style="background-color: antiquewhite;" >
+    <tr style="color: black; ">
+        <th>DEVICE SPECIFICATION</th>
+        <th>DETAILS</th>
+    </tr>
+    <tr style="color: rgb(0, 0, 0); ">
+        <td>BRAND</td>
+        <td>ASUS</td>
+    </tr>
+    <tr>
+        <td>MODEL NAME</td>
+        <td>VIVOBOOK</td>
+    </tr>
+    <tr>
+        <td>SCREEN SIZE</td>
+        <td>15.6 inches</td>
+    </tr>
+    <tr>
+        <td>COLOR</td>
+        <td>GREY</td>
+    </tr>
+    <tr>
+        <td>RAM</td>
+        <td>4+16GB</td>
+    </tr>
+    <tr>
+        <td>HARD DISK</td>
+        <td>CORE i5</td>
+    </tr>
+    <tr>
+        <td>GRAPHICS CARD</td>
+        <td>NVIDIA</td>
+    </tr>
+    <tr>
+        <td>SYSTEM TYPE</td>
+        <td>64 Bit-OS,X64</td>
+    </tr>
+</table>
+
+</body>
+
+
+
+<!DOCTYPE html>
+<head>
+    <title>LAPTOP CONFIGURATION</title>
+</head>
+
+<body><center>
+    <h1>My laptop Configuration</h1>SARAVANAN C 212222110041<h1></h1></center>
+    <table border="2px" align="center" cellpadding="10" style="background-color: antiquewhite;" >
+    <tr style="color: black; ">
+        <th>DEVICE SPECIFICATION</th>
+        <th>DETAILS</th>
+    </tr>
+    <tr style="color: rgb(0, 0, 0); ">
+        <td>BRAND</td>
+        <td>ASUS</td>
+    </tr>
+    <tr>
+        <td>MODEL NAME</td>
+        <td>VIVOBOOK</td>
+    </tr>
+    <tr>
+        <td>SCREEN SIZE</td>
+        <td>15.6 inches</td>
+    </tr>
+    <tr>
+        <td>COLOR</td>
+        <td>GREY</td>
+    </tr>
+    <tr>
+        <td>RAM</td>
+        <td>4+16GB</td>
+    </tr>
+    <tr>
+        <td>HARD DISK</td>
+        <td>CORE i5</td>
+    </tr>
+    <tr>
+        <td>GRAPHICS CARD</td>
+        <td>NVIDIA</td>
+    </tr>
+    <tr>
+        <td>SYSTEM TYPE</td>
+        <td>64 Bit-OS,X64</td>
+    </tr>
+</table>
+
+</body>
+
+
+
+<!DOCTYPE html>
+<head>
+    <title>LAPTOP CONFIGURATION</title>
+</head>
+
+<body><center>
+    <h1>My laptop Configuration</h1>SARAVANAN C 212222110041<h1></h1></center>
+    <table border="2px" align="center" cellpadding="10" style="background-color: antiquewhite;" >
+    <tr style="color: black; ">
+        <th>DEVICE SPECIFICATION</th>
+        <th>DETAILS</th>
+    </tr>
+    <tr style="color: rgb(0, 0, 0); ">
+        <td>BRAND</td>
+        <td>ASUS</td>
+    </tr>
+    <tr>
+        <td>MODEL NAME</td>
+        <td>VIVOBOOK</td>
+    </tr>
+    <tr>
+        <td>SCREEN SIZE</td>
+        <td>15.6 inches</td>
+    </tr>
+    <tr>
+        <td>COLOR</td>
+        <td>GREY</td>
+    </tr>
+    <tr>
+        <td>RAM</td>
+        <td>4+16GB</td>
+    </tr>
+    <tr>
+        <td>HARD DISK</td>
+        <td>CORE i5</td>
+    </tr>
+    <tr>
+        <td>GRAPHICS CARD</td>
+        <td>NVIDIA</td>
+    </tr>
+    <tr>
+        <td>SYSTEM TYPE</td>
+        <td>64 Bit-OS,X64</td>
+    </tr>
+</table>
+
+</body>
+
+
+
+<!DOCTYPE html>
+<head>
+    <title>LAPTOP CONFIGURATION</title>
+</head>
+
+<body><center>
+    <h1>My laptop Configuration</h1>SARAVANAN C 212222110041<h1></h1></center>
+    <table border="2px" align="center" cellpadding="10" style="background-color: antiquewhite;" >
+    <tr style="color: black; ">
+        <th>DEVICE SPECIFICATION</th>
+        <th>DETAILS</th>
+    </tr>
+    <tr style="color: rgb(0, 0, 0); ">
+        <td>BRAND</td>
+        <td>ASUS</td>
+    </tr>
+    <tr>
+        <td>MODEL NAME</td>
+        <td>VIVOBOOK</td>
+    </tr>
+    <tr>
+        <td>SCREEN SIZE</td>
+        <td>15.6 inches</td>
+    </tr>
+    <tr>
+        <td>COLOR</td>
+        <td>GREY</td>
+    </tr>
+    <tr>
+        <td>RAM</td>
+        <td>4+16GB</td>
+    </tr>
+    <tr>
+        <td>HARD DISK</td>
+        <td>CORE i5</td>
+    </tr>
+    <tr>
+        <td>GRAPHICS CARD</td>
+        <td>NVIDIA</td>
+    </tr>
+    <tr>
+        <td>SYSTEM TYPE</td>
+        <td>64 Bit-OS,X64</td>
+    </tr>
+</table>
+
+</body>
 ```
 ## OUTPUT:
-![267843978-82d3a59b-993a-45cb-84ba-9a469c986e3b](https://github.com/NaveenSivamalai/simplewebserver/assets/123792574/cbc737ca-1327-4578-8fe0-d9fda4ebde21)
-![267844040-4d9b6494-c58e-42ce-b850-41c3a52515bd](https://github.com/NaveenSivamalai/simplewebserver/assets/123792574/2aff6cd6-056b-4793-b527-4c48909600cf)
-
-
+![LAPTOP CONFIGURATION](https://github.com/user-attachments/assets/3b923897-0486-4ba6-90bf-a4bab2faf569)
 ## RESULT:
 The program for implementing simple webserver is executed successfully.
