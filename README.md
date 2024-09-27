@@ -1,4 +1,4 @@
-# EX01 Developing a Simple Webserver
+# EX-01 Developing a Simple Webserver
 ## Date:
 
 ## AIM:
@@ -22,35 +22,56 @@ Testing the webserver.
 
 ## PROGRAM:
 ```
-from http.server import HTTPServer,BaseHTTPRequestHandler
-
-content='''
-<!doctype html>
-<html>
+<!DOCTYPE html>
 <head>
-<title> My Web Server</title>
+    <title>LAPTOP CONFIGURATION</title>
 </head>
-<body>
-<h1>Welcome</h1>
+
+<body><center>
+    <h1>My laptop Configuration</h1>SARAVANAN C 212222110041<h1></h1></center>
+    <table border="2px" align="center" cellpadding="10" style="background-color: antiquewhite;" >
+    <tr style="color: black; ">
+        <th>DEVICE SPECIFICATION</th>
+        <th>DETAILS</th>
+    </tr>
+    <tr style="color: rgb(0, 0, 0); ">
+        <td>BRAND</td>
+        <td>ASUS</td>
+    </tr>
+    <tr>
+        <td>MODEL NAME</td>
+        <td>VIVOBOOK</td>
+    </tr>
+    <tr>
+        <td>SCREEN SIZE</td>
+        <td>15.6 inches</td>
+    </tr>
+    <tr>
+        <td>COLOR</td>
+        <td>GREY</td>
+    </tr>
+    <tr>
+        <td>RAM</td>
+        <td>4+16GB</td>
+    </tr>
+    <tr>
+        <td>HARD DISK</td>
+        <td>CORE i5</td>
+    </tr>
+    <tr>
+        <td>GRAPHICS CARD</td>
+        <td>NVIDIA</td>
+    </tr>
+    <tr>
+        <td>SYSTEM TYPE</td>
+        <td>64 Bit-OS,X64</td>
+    </tr>
+</table>
+
 </body>
-</html>
-'''
-
-class MyServer(BaseHTTPRequestHandler):
-    def do_GET(self):
-        print("Get request received...")
-        self.send_response(200) 
-        self.send_header("content-type", "text/html")       
-        self.end_headers()
-        self.wfile.write(content.encode())
-
-print("This is my webserver") 
-server_address =('',8000)
-httpd = HTTPServer(server_address,MyServer)
-httpd.serve_forever()
 ```
 ## OUTPUT:
-
+![LAPTOP CONFIGURATION](https://github.com/user-attachments/assets/edda6aae-bdc6-4c1f-9d05-6b30cf2a2aa7)
 
 ## RESULT:
 The program for implementing simple webserver is executed successfully.
