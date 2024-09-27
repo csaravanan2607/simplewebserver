@@ -1,5 +1,5 @@
 # EX-01 Developing a Simple Webserver
-## Date: 
+## Date:
 
 ## AIM:
 To develop a simple webserver to serve html pages.
