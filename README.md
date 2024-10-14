@@ -1,10 +1,11 @@
-# EX-01 Developing a Simple Webserver
-## Date:
+# Developing a Simple Webserver
+# EX-01 
+# Date : 29/9/24
 
-## AIM:
+## AIM :
 To develop a simple webserver to serve html pages.
 
-## DESIGN STEPS:
+## DESIGN STEPS :
 ### Step 1: 
 HTML content creation.
 
@@ -20,7 +21,7 @@ Serving the HTML pages.
 ### Step 5:
 Testing the webserver.
 
-## PROGRAM:
+## PROGRAM :
 ```
 <!DOCTYPE html>
 <head>
@@ -70,8 +71,8 @@ Testing the webserver.
 
 </body>
 ```
-## OUTPUT:
+## OUTPUT :
 ![LAPTOP CONFIGURATION (2)](https://github.com/user-attachments/assets/46fe2531-fc4c-41fd-85d7-b29cafaf4c12)
 
-## RESULT:
+## RESULT :
 The program for implementing simple webserver is executed successfully.
