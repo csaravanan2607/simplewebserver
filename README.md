@@ -71,6 +71,7 @@ Testing the webserver.
 </body>
 ```
 ## OUTPUT:
-![LAPTOP CONFIGURATION](https://github.com/user-attachments/assets/3b923897-0486-4ba6-90bf-a4bab2faf569)
+![LAPTOP CONFIGURATION (2)](https://github.com/user-attachments/assets/46fe2531-fc4c-41fd-85d7-b29cafaf4c12)
+
 ## RESULT:
 The program for implementing simple webserver is executed successfully.
